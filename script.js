@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    setInterval(createHeart, 300);
+    setInterval(createHeart, 200);
 });
 
 function createHeart() {
@@ -11,9 +11,9 @@ function createHeart() {
     heart.style.width = size;
     heart.style.height = size;
     heart.style.left = Math.random() * window.innerWidth + "px";
-    heart.style.animationDuration = Math.random() * 3 + 2 + "s";
+    heart.style.animationDuration = Math.random() * 5 + 3 + "s";
     
     setTimeout(() => {
         heart.remove();
-    }, 5000);
+    }, 8000);
 }
